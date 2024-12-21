@@ -1,0 +1,43 @@
+.Body {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.Body form {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    border-radius: 20px;
+    padding:20px;
+    gap: 20px; 
+    align-items: center; 
+}
+
+
+.Body button {
+    border: none;
+    border-radius: 10px;
+    width:10px;   
+    cursor: pointer;
+}
+
+/* .Image img{
+    padding: 30px;
+    width: 300px; 
+    height: 400px; 
+    justify-content: center;
+}
+
+.List {
+    margin-left: 600px;
+}
+
+
+.List ul li{
+    list-style: none;
+    display: contents;
+} */
