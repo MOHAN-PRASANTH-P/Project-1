@@ -1,83 +1,76 @@
 body {
-  /* background-color: rgb(223, 176, 176); */
+      background-color: rgb(223, 176, 176);
       color: rgb(0, 0, 0);
       background-image: url("https://wallpaperaccess.com/full/3239444.jpg");
-      color: white;
-  }
-h1 {
-  color: rgb(229, 219, 219);
+      display: flex;
+      /* justify-content: center; */
+      margin-top: 140px;
+  } 
+
+.img {
+ position: relative;
+ left: 70px;
+ bottom : 20px;
 }
-.fh1 {
-  text-align: center;
-  color: black;
+
+.img img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid green;
+  border-radius: 50px;
 }
-.fpa {
-  color:black;
-  text-align: center;
+
+.status {
+  position: relative;
+  color: green;
+  font-size: 26px;
+  font-weight: 100;
 }
+
 .Body {
-  width: 600px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
-  margin-top: 50px;
+  border: 1px solid rgb(223,176,176);
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+  position: relative;
+  top: 0px;
+  background-color: rgb(233, 141, 141);
+  box-shadow: 10px 8px 2px rgb(223,141,141);
+}
+
+.Body form table tr td{
+  border: 2px solid black;
   padding: 10px;
-  /* box-shadow: 10px 8px 8px 0px rgb(112, 112, 197); */
-}
-
-.Body form {
-  font-size: 20px;
-  font-weight: 100px;
-  background-color: rgb(28, 132, 176);
-  border-radius: 20px;
-  padding:40px;
-  align-content: center;
-}
-
-.Body form table tr td input {
-  width: 250px;
-  border-radius: 20px;
-  border: none;
-  height: 25px;
-  padding: 8px;
-  background-color: rgb(157, 211, 198);
-}
-
-.Body form table tr td select {
-  width: 265px;
-  border-radius: 20px;
-  border: none;
-  height: 35px;
-  padding: 8px;
-  background-color: rgb(157, 211, 198);
-}
-
-.Body form select {
-  cursor: pointer;
-}
-
-.Body button {
-  border: none;
-  border-radius: 10px;
-  /* width:100px; */
-  height: 30px;   
-  cursor: pointer;
-  background-color: rgb(81, 164, 63);
-  margin-top: 50px;
-   margin-left: 150px;
-  font-size:20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.Body form table button :hover {
-  background-color: red;
-}
-
-.links {
+  color: rgb(227, 15, 15);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  margin-top: 50px;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: aliceblue;
+}
+
+.Body td {
+  width: 100px;
+}
+
+.Data {
+  margin: 40px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Data input {
+  width: 300px;
   height: 30px;
+  margin-left: 40px;
+}
+
+.Body form table select {
+  background-color: rgb(233, 141, 141);
+  border: 1px solid black;
+}
+
+select option:hover {
+  cursor: pointer;
 }

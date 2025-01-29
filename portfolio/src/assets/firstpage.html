@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    /* background-color: rgb(116, 88, 155); */
+    background-image: url("https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MDQ3NjQ1/website-background-templates.png");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: 200vh;
+}
+.Border tr td{
+    border: 2px solid black;
+    padding: 9px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+iframe {
+    margin-top: 30px;
+    margin-left: 500px;
+    border-radius: 20px;
+}
+
+.about {
+    margin-left: 2px;
+}
+
+.links {
+    background-color: rgb(220, 220, 220);
+    margin-top: 60px;
+    text-align: center;
+    height: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to Our Mern Stack Course</h1><hr>
+    <h3 style="text-align: center;">🚀🤖Training || TechQuiz || Tech Intern</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xhUPFsQFsIk?si=QlX8NE_aenZwHVs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="about">
+        <h4>About : </h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ab reprehenderit laborum doloribus deleniti iure eligendi animi numquam aliquam, voluptas, nobis reiciendis exercitationem obcaecati ipsa quasi totam perspiciatis esse? Eius illo voluptates magni fuga, vitae esse sapiente impedit nisi nulla fugiat autem repudiandae aliquam doloribus eveniet praesentium fugit doloremque mollitia, aut reprehenderit. Cumque ullam autem numquam blanditiis aliquam possimus inventore praesentium, dolor ducimus aperiam eveniet libero harum qui illo laboriosam ipsam cum! Odio nam tempore perspiciatis molestiae error cum tenetur, mollitia aspernatur, excepturi quis inventore non eos reprehenderit minima illo perferendis possimus suscipit repudiandae, labore magnam ex commodi ipsam vitae?</p>
+    </div>
+    <div class="Border">
+        <center>
+        <h2>Technology Used for Full Stack Development</h2>
+    <form>
+        <table border=outset>
+            <tr>
+                <td><h2>Frontend</h2><td><h2>Backend</h2></td><td><h2>DataBase</h2></td>
+            </tr>
+            <tr>
+                <td>HTML</td><td>JAVA</td><td>Mongo DB</td>
+            </tr>
+            <tr>
+                <td>CSS</td><td>Python</td><td>MySQL</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td><td>Node JS</td><td>AWS</td>
+            </tr>
+        </table>
+    </form> 
+    </center>
+    </div>
+    <div>
+        <input type="range"
+         value="100" id="slider">
+    </div>
+    <div class="links">
+        <a href="index.html">Register Now! || </a>
+        <a href="https://www.youtube.com/">YouTube || </a>
+        <a href="https://r.search.yahoo.com/_ylt=AwrKGGzVnmZneQIAt967HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1735988181/RO=10/RU=https%3a%2f%2fwww.instagram.com%2f%3fhl%3den/RK=2/RS=oEoYy__uJtBErTINTDlZCEsk8FI-">Instagram</a>
+    </div>
+    <script>
+        const volume=document.getElementById('slider')
+        const bslider=document.getElementById('body')
+        volume.addEventListener('input',function() {
+            const vol=this.value;
+            body.style.filter=`brightness(${vol}%)`
+        })
+    </script>
+</body>
+</html>

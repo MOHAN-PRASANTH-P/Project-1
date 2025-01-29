@@ -1,0 +1,113 @@
+
+body {
+    background-color: #242323;
+}
+
+.top-about {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.top-about ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    color: #fff;
+}
+
+.top-about ul li {
+    width: 150px;
+    height: 60px;
+}
+
+.top-about ul:hover {
+    cursor: pointer;
+}
+
+
+.top-about button:hover {
+    cursor: pointer;
+}
+
+.Image img {
+    width: 360px;
+    height: 390px;
+    position: absolute;
+    top: 240px;
+    left: 20px;
+}
+
+.codewithrandom {
+    color: aqua;
+    font-weight: 100;
+    position:absolute;
+    top: 260px;
+    left: 600px;
+}
+
+.codewithrandom p {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 2px;
+}
+
+.codewithrandom a {
+    color: aqua;
+    font-size: 40px;
+    position: absolute;
+    top: 87px;
+    letter-spacing: 2px;
+}
+
+.paragraph {
+    color: #fff;
+    position: absolute;
+    top: 430px;
+    left: 600px;
+    word-spacing: 4px;
+    line-height: 30px;
+}
+
+.download button{
+    color: aqua;
+    background-color: #242323;
+    border: aqua 2px solid;
+    padding: 10px;
+    position: absolute;
+    top: 650px;
+    left: 600px;
+    width: 160px;
+}
+
+.download button:hover {
+    cursor: pointer;
+}
+
+.skill-style-active{
+    width: 150px;
+    height: 360px;
+    background-color: #ece2e2;
+    color: #242323;
+    position: fixed;
+    transition: max-height 3s ease;
+    transition: background-color 2s ease;
+    list-style-type: none;
+}
+
+.contact-button  button{
+    width: 90px;
+    height: 30px;
+    position:absolute;
+    right: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+}

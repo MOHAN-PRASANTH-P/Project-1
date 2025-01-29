@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <div class="position">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Praesentium sed sint reprehenderit neque doloremque ea natus ipsam, quas minus sunt facilis sequi repellat cumque nisi, nesciunt quisquam asperiores eius harum consequatur voluptatem. Inventore doloremque ullam sed, corrupti animi voluptas, quidem porro illum nihil error tenetur deserunt eius ad numquam est sequi rerum, eligendi quisquam. Illum, nam inventore? Voluptatum nostrum amet neque aperiam quo a quos tenetur accusamus? Totam suscipit perferendis non voluptate itaque enim repudiandae, natus corporis eum? Quod eos suscipit odit sequi incidunt voluptates earum dolores quae! Quis consequatur inventore suscipit dolorem repudiandae omnis veritatis tempora ab expedita fugiat?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore dignissimos culpa a optio maiores debitis laudantium veniam atque provident aspernatur deserunt expedita unde sapiente sint ipsam corrupti sed, nobis sunt. Deserunt culpa doloremque nobis temporibus totam, corrupti dolorum iusto ipsam incidunt velit et porro! Est optio cupiditate molestias adipisci tempore.</p>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Example 1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bContainer {
+            width: 80%;
+            text-align: center;
+        }
+
+        .imgContainer {
+            margin-bottom: 50px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            filter: brightness(100%);
+            margin-bottom: 60px;
+        }
+
+        input[type="range"] {
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bContainer">
+        <h1>Using CSS filter Property</h1>
+        <div class="imgContainer">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240315180241/Kotlin-Libraries.webp"
+                alt="Example Image" 
+                 id="image">
+        </div>
+        <input type="range" min="0"
+               max="200" value="0"
+               class="slider"
+               id="brightnessSlider">
+    </div>
+    <script>
+        const bSlider =document.getElementById('brightnessSlider');
+        const img = document.getElementById('image');
+        bSlider.addEventListener('input', function () {
+            const bVal = this.value;
+            img.style.filter = `brightness(${bVal}%)`;
+        });
+    </script>
+</body>
+
+</html>

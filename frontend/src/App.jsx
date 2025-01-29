@@ -1,36 +1,61 @@
 import { useState } from 'react'
 import './App.css'
 
+import Image from "./assets/Image1.avif"
+import { use } from 'react'
+
 function App() {
+
+    const [name,setName] = useState("Mohan Prasanth P")
+    const [age,setAge] = useState(19)
+    const [dob,setDob] = useState("14-03-2006")
+    const [email,setEmail] = useState("abc123@gmail.com")
+    const [phone,setPhone] = useState("+91 7862209888")
+    const [gender,setGender] = useState(true)
+    const [Status,setStatus] = useState(true)
+
+    const handleName = (e) => {
+        setName(e.target.value);
+    }
+
+    const handleAge = (e) => {
+        setAge(e.target.value);
+    }
+
+    const handleDOB = (e) => {
+        setDob(e.target.value);
+    }
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value)
+    }
 
   return(
     <>
     <div>
-    <h1 className="fh1">Register Now!...</h1>
-    <p  className="fpa">Empowering Young Developers to level up their Skills through training in Software development Technologies🧑‍💻</p>
     <div className="Body">
         <form>
             <table>
+                <div className='img'><img src={Image}/></div>
                <tr>
-                   <td>Name : </td><td><input type="text" placeholder="Enter Your Name" /></td>
+                   <td>Name </td><td><label>{name}</label></td>
                </tr>
                <tr> 
-                   <td>Age : </td><td><input type="number" placeholder="Enter Your Age" /></td>
+                   <td>Age </td><td><label>{age}</label></td>
                </tr>
                <tr>
-                   <td>Date of Birth : </td><td><input type="date" placeholder="Enter Your DOB" /></td>
+                   <td>Date of Birth  </td><td><label>{dob}</label></td>
                </tr>
                <tr>
-                   <td>E-mail : </td><td><input type="email" placeholder="Enter email ID" /></td>
+                   <td>E-mail  </td><td><label>{email}</label></td>
                </tr>
                <tr>
-                   <td>Phone : </td><td><input type="text" placeholder="+91" /></td>
+                   <td>Phone </td><td><label>{phone}</label></td>
                </tr>
                <tr>
-                  <td>Select Course : </td>
+                  <td>Select Course </td>
                   <td>
-                    <select aria-placeholder="--">
-                        <option></option>
+                    <select aria-placeholder="--">7
                         <option>MongoDB</option>
                         <option>ExpressJS</option>
                         <option>ReactJS</option>
@@ -38,15 +63,19 @@ function App() {
                     </select>
                   </td>
                </tr>
-               <tr>
-                  <td>Upload Your Details : </td><td><input type="file" /></td>
-               </tr>
-               {/* <tr>
-                  <td><button onClick={handleclick()}>Register</button></td><td><button>Cancel</button></td>
-               </tr> */}
            </table>
         </form>
     </div>
+        {/* <div className='Data'>
+            <label htmlFor="">Name : <input type='text' placeholder='Enter your name'  onChange={handleName}/></label>
+            <label htmlFor="">Age : <input style={
+                {marginLeft:"50px"}
+            } type='number' placeholder='Enter your age' onChange={handleAge}/></label>
+            <label htmlFor="">DOB : <input  style={
+                {marginLeft:"40px"}} type='date' placeholder='Enter your DOB'  onChange={handleDOB}/></label>
+            <label htmlFor="">Email : <input style={
+                {marginLeft:"40px"}} type='text' placeholder='Enter your Email' onChange={handleEmail}/></label>
+        </div> */}
     </div>
     </>
     )

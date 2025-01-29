@@ -3,33 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hello MernStack.com</title>
+    <link rel="icon" href="Msymbol.jpeg">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1 style="text-align: center;">Welcome</h1>
+    <h1 style="text-align: center;">Register Now!...</h1>
+    <p style="text-align: center;">Empowering Young Developers to level up their Skills through training in Software development Technologies🧑‍💻</p>
     <hr>
-    <h1 style="text-align: center;">Login Page</h1>
     <div class="Body">
         <form>
-            <label>Enter Your Name : <input type="text" placeholder="Enter your Name"></label>
-            <label>Enter Your Age : <input type="number" placeholder="Enter your Age"></label>
-            <label>Male : <input type="radio"> Female : <input type="radio"></label>
-            <label>Address : <input type="text" placeholder="Address"></label>
-            <button>Submit</button>
+            <table>
+               <tr>
+                   <td>Name : </td><td><input type="text" placeholder="Enter Your Name"></td>
+               </tr>
+               <tr> 
+                   <td>Age : </td><td><input type="number" placeholder="Enter Your Age"></td>
+               </tr>
+               <tr>
+                   <td>Date of Birth : </td><td><input type="date" placeholder="Enter Your DOB"></td>
+               </tr>
+               <tr>
+                   <td>E-mail : </td><td><input type="email" placeholder="Enter email ID"></td>
+               </tr>
+               <tr>
+                   <td>Phone : </td><td><input type="text" placeholder="+91"></td>
+               </tr>
+               <tr>
+                  <td>Select Course : </td>
+                  <td>
+                    <select aria-placeholder="--">
+                        <option></option>
+                        <option>MongoDB</option>
+                        <option>ExpressJS</option>
+                        <option>ReactJS</option>
+                        <option>NodeJS</option>
+                    </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Upload Your Details : </td><td><input type="file"></td>
+               </tr>
+               <tr>
+                  <td><button onclick="handleclick()">Register</button></td><td><button>Cancel</button></td>
+               </tr>
+           </table>
         </form>
     </div>
-    <!-- <div class="Image">
-        <img src="Image1.jpg">
+    <br>
+    <div class="links">
+        <a href="portfolio.html">Home || </a>
+        <a href="https://www.youtube.com/">YouTube || </a>
+        <a href="https://r.search.yahoo.com/_ylt=AwrKGGzVnmZneQIAt967HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1735988181/RO=10/RU=https%3a%2f%2fwww.instagram.com%2f%3fhl%3den/RK=2/RS=oEoYy__uJtBErTINTDlZCEsk8FI-">Instagram</a>
     </div>
-    <div class="List">
-        <ul>
-            <li>Apple</li>
-            <li>Orange</li>
-            <li>Grapes</li>
-            <li>Mango</li>
-            <li>Banana</li>
-        </ul>
-    </div> -->
+    <script src="index.js"></script>
 </body>
 </html>
